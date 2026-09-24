@@ -1,4 +1,4 @@
-## Wednesday Team Meeting
+## Wednesday Team Meeting September 17
 
 On Wednesday, our team focused on developing a set of questions to better understand the requirements and expectations for the **CART 415 Large Crowd Game Project**.
 
