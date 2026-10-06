@@ -81,3 +81,81 @@ A cooperative boss battle where a large group of players joins an ever-growing p
 **Goal:** Defeat the boss before the party is overwhelmed.
 
 **Possible features:** The boss could have multiple phases, weak points, and attacks that require players to work together or split into groups.
+
+# Multiplayer Game Concept Development
+
+**Date:** October 6, 2026
+
+## Overview
+
+During this stage of the project, I focused on developing and evaluating several possible concepts for the large-crowd multiplayer game. The main goal was to explore how different gameplay ideas could take advantage of a large and unpredictable number of players joining and leaving the game through their smartphones.
+
+## Multiplayer Concepts
+
+I developed four main multiplayer concepts:
+
+1. **Tower-Building Jenga Game**
+2. **Giant Ball Soccer / Giant Puck Hockey**
+3. **Multiplayer Goalie Challenge**
+4. **Dynamic Maze Game**
+
+For each concept, I explored how players would connect to the game using a **QR code**, how the gameplay would change depending on the number of active players, and how players could interact with one another within a shared environment.
+
+## Player Count as a Gameplay Mechanic
+
+A major idea that emerged from this process was treating the **number of players as a gameplay mechanic rather than simply a technical limitation**.
+
+For example:
+
+- In the **Jenga concept**, having too few players makes managing the blocks difficult, while having too many players creates coordination and collision problems.
+- In the **giant ball or puck concept**, the number of players directly influences which team has control over the object.
+- In the **goalie challenge**, more players create more opportunities to score while also increasing the amount of chaos on the field.
+- In the **maze concept**, the number of players could potentially influence how the environment changes.
+
+This helped establish the idea that the game should not necessarily require a fixed number of players. Instead, the game could adapt to the number of people participating.
+
+## Gameplay, Connectivity, and Technical Evaluation
+
+After developing these concepts, I compared their **gameplay, connectivity, and technical advantages and disadvantages**.
+
+Some of the main challenges I identified were:
+
+- Network synchronization
+- Physics calculations
+- Player collisions
+- Team imbalance
+- Excessive chaos
+- Managing players joining and leaving
+- Handling disconnected players
+- Keeping the game understandable for new players
+
+This evaluation helped me identify which parts of each concept could become difficult to implement and which mechanics could make the multiplayer experience more engaging.
+
+## Potential Solutions
+
+I then explored potential solutions to these problems. Rather than trying to completely eliminate the chaos created by large numbers of players, I considered ways to make the chaos part of the intended gameplay.
+
+Some potential solutions included:
+
+- Dynamically adjusting difficulty based on player count
+- Simplifying physics calculations
+- Limiting the number of active objects
+- Using cooldowns for player abilities
+- Allowing players to switch teams
+- Dynamically changing the game environment
+- Scaling the number of objects or events based on the number of players
+- Allowing eliminated players to continue participating through alternative mechanics, such as the ghost system in the maze concept
+
+## Reflection
+
+Overall, this work helped me better understand the relationship between **multiplayer design, player count, connectivity, and technical limitations**.
+
+Instead of designing a game around a fixed number of players, I am exploring how the game itself can adapt to the crowd. The unpredictable nature of a large multiplayer environment can become an important part of the experience rather than something that needs to be completely controlled.
+
+A key design principle that came out of this process is:
+
+> **The game should adapt to the crowd rather than requiring the crowd to adapt to the game.**
+
+## Next Steps
+
+The next step is to compare the four concepts more closely and determine which idea is the most appropriate for the large-crowd exhibition environment. I will need to consider which concept provides the best balance between **fun gameplay, accessibility, connectivity, and technical feasibility**.
