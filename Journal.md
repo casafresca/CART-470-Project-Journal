@@ -154,8 +154,68 @@ Instead of designing a game around a fixed number of players, I am exploring how
 
 A key design principle that came out of this process is:
 
-> **The game should adapt to the crowd rather than requiring the crowd to adapt to the game.**
+> **The game should adapt to the crowd rather than requiring the crowd to adapt to the game. ****
 
 ## Next Steps
 
-The next step is to compare the four concepts more closely and determine which idea is the most appropriate for the large-crowd exhibition environment. I will need to consider which concept provides the best balance between **fun gameplay, accessibility, connectivity, and technical feasibility**.
+Next, I will compare the four concepts more closely and determine which idea best fits the large-crowd exhibition environment. I need to consider which concept best balances **fun gameplay, accessibility, connectivity, and technical feasibility**.
+
+
+
+# Game Development Log & Reflection Journal
+
+**Project:** Gameplay Prototypes for Client Demonstration  
+**Prototypes:** 2D Arcade Soccer & Infinite Tower Physics  
+**Engine & Tooling:** Unity 6 (6000.3.5f1 LTS) | C# Scripting | Unity 2D Physics Engine  
+**Role:** Gameplay Programmer & Designer  
+**Purpose:** Explore and demonstrate potential gameplay mechanics to teammates in preparation for a client presentation.
+
+## 1. Project Overview & Objectives
+
+During this development session, I created two gameplay prototypes to explore potential directions for our team's large-crowd multiplayer game project. The objective was to build small, functional demonstrations of different gameplay ideas to present to my teammates. These prototypes would help us evaluate mechanics, discuss feasibility, and decide which concepts were worth presenting to our client.
+
+The prototype explored a top-down, 2D arcade soccer game featuring player movement, ball possession, shooting, bouncing physics, and an AI-controlled goalkeeper. The second prototype explored an infinite vertical tower game featuring procedural platform generation, block pickup and throwing, and physics-based platform placement.
+
+Rather than developing two complete games, I focused on implementing their core interactions so that my teammates could experience the gameplay ideas directly instead of relying exclusively on verbal explanations or written concepts. Building these prototypes also let me explore technical challenges for each idea, including collision handling, physics stability, procedural generation, and responsive player controls.
+
+The prototypes served as exploratory tools for our team's design process. By making the mechanics playable, I could demonstrate how different gameplay systems might work in practice and provide a stronger foundation for discussing potential directions with our client.
+
+## 2. Prototype Development & Technical Exploration
+
+### A. 2D Arcade Soccer Prototype
+
+The arcade soccer prototype explored a fast-paced, physics-driven multiplayer experience. I implemented player movement, automatic ball possession, impulse-based shooting, high-bounciness collisions, and a predictive goalkeeper AI.
+
+The ball attaches to the player through a designated `BallHoldPosition` object and switches between a possession state and an independent physics state when kicked. Pressing Space launches the ball based on the player's movement or facing direction. I also configured physics materials to create energetic rebounds off the arena boundaries and developed a goalkeeper that predicts where the ball will intersect the goal line.
+
+These mechanics allowed me to demonstrate the basic feel of controlling a player, shooting a ball, and interacting with an environment governed by arcade-style physics. The prototype also helped me identify technical considerations that could affect gameplay, such as maintaining responsive controls, preventing high-speed collision issues, and keeping the goalkeeper stable during impacts.
+
+### B. Infinite Tower Physics Prototype
+
+The infinite tower prototype explored a different gameplay direction centred on vertical movement, object manipulation, and physics-based construction. I implemented a procedural platform generator that creates new platforms as the player progresses upward. In contrast, the player can pick up nearby blocks, carry them, and throw or place them within the environment. I also developed collision checks to ensure that blocks lock into place when landing on platform surfaces rather than attaching incorrectly to their sides.
+
+This prototype let me demonstrate how players might interact with a continuously expanding environment and manipulate physical objects as part of gameplay. It also revealed technical challenges related to procedural ground object overlap, stable platform collisions, and predictable throwing mechanics.
+
+## 3. Reflection: Prototyping for Team Collaboration
+
+The main value of these prototypes was not producing finished products, but giving my team something tangible to evaluate as we explored gameplay possibilities for our client project. By implementing the core mechanics, I could communicate ideas through playable examples and help the team move from abstract concepts toward practical demonstrations.
+
+Developing the prototypes also helped me investigate the technical feasibility of different mechanics before committing to a particular direction. For example, the soccer prototype required me to manage ball possession, collision behaviour, and goalkeeper movement. In contrast, the tower prototype required me to solve problems involving procedural generation, object manipulation, and platform stability. Working through these challenges gave me useful insight into the implementation effort and potential limitations of each concept.
+
+Another important aspect of this work was supporting team discussion and preparation for the client demonstration. The prototypes could serve as starting points for evaluating which mechanics were most interesting, technically achievable, and adaptable to the project's broader goals.
+
+Overall, this process reinforced the value of rapid prototyping during game design. A prototype doesn't need to include every planned feature to be useful. By focusing on a small set of representative mechanics, I could create demonstrations that helped my teammates visualize and discuss alternatives and make more informed decisions about the project's direction.
+
+## 4. Next Steps
+
+- [ ] Present prototypes to my team and gather feedback on the mechanics.
+- [ ] Identify which elements best support the team's overall game concept and client requirements.
+- [ ] Discuss the strengths, limitations, and technical feasibility of each gameplay direction, producing findings based on team feedback.
+- [ ] Prepare a focused demonstration for the client that communicates the selected gameplay ideas clearly.
+
+## 5. Conclusion
+
+These two prototypes were developed as exploratory gameplay demonstrations to support team collaboration and preparation for a client presentation. The arcade soccer prototype investigated fast-paced movement and physics-driven ball interactions, while the infinite tower prototype explored procedural generation, object manipulation, and platform-based gameplay.
+
+By building functional examples of these mechanics, I was able to provide the team with concrete material to evaluate potential game concepts. The process also helped me identify technical challenges early and better understand what it takes to implement different gameplay systems. Ultimately, the prototyping and discussion helped us determine which gameplay directions were worth exploring further with our client.
+
