@@ -215,7 +215,31 @@ Overall, this process reinforced the value of rapid prototyping during game desi
 
 ## 5. Conclusion
 
-These two prototypes were developed as exploratory gameplay demonstrations to support team collaboration and preparation for a client presentation. The arcade soccer prototype investigated fast-paced movement and physics-driven ball interactions, while the infinite tower prototype explored procedural generation, object manipulation, and platform-based gameplay.
+These two prototypes were exploratory gameplay demonstrations to support team collaboration and prepare for a client presentation. The arcade soccer prototype investigated fast-paced movement and physics-driven ball interactions, while the infinite tower prototype explored procedural generation, object manipulation, and platform-based gameplay.
 
-By building functional examples of these mechanics, I was able to provide the team with concrete material to evaluate potential game concepts. The process also helped me identify technical challenges early and better understand what it takes to implement different gameplay systems. Ultimately, the prototyping and discussion helped us determine which gameplay directions were worth exploring further with our client.
+By building functional examples of these mechanics, I gave the team concrete material to evaluate potential game concepts. The process also helped me identify technical challenges early and better understand what it takes to implement different gameplay systems. Ultimately, the prototyping and discussion helped us determine which gameplay directions were worth exploring further with our client.
 
+# Development Journal: Strawberry Mosaic Maze Prototype
+
+## Goal
+For this prototype, I wanted to create a player character that could move through a maze, collect coloured blocks, and use them to fill in the strawberry mosaic in the middle.
+
+## Work Completed
+The maze and strawberry started as one image. Gameplay was added so the player could interact with the design:
+
+- Move through the maze using WASD or the arrow keys.
+- Pick up colored blocks by pressing **E**.
+- Place blocks on nearby strawberry tiles by clicking them.
+- Fill a tile only when the block matches its required colour.
+- Track progress toward completing all **62 mosaic tiles**.
+
+The player also received a simple eye-based appearance to make the character easier to identify.
+
+## Testing and Progress
+The code compiled successfully, and checks confirmed that all strawberry tiles and collectible block locations were reachable. The prototype still needs playtesting in Unity to check how movement, block collection, and placement feel during gameplay.
+
+## Screen Recordings for the Group PowerPoint
+I also recorded this prototype and the other two Unity prototypes I created to help complete our group PowerPoint. These recordings showed how each prototype worked and communicated the interactions more clearly than screenshots alone.
+
+## Reflection
+This work developed the maze from a static image into an interactive collection and colour-matching prototype. The next step is to playtest the experience and improve the controls and visual feedback where needed.
