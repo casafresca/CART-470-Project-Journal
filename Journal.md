@@ -243,3 +243,9 @@ I also recorded this prototype and the other two Unity prototypes I created to h
 
 ## Reflection
 This work developed the maze from a static image into an interactive collection and colour-matching prototype. The next step is to playtest the experience and improve the controls and visual feedback where needed.
+
+# Reflective Journal: Team BEACH’s CART 470 Presentation
+
+I contributed to my team's CART 470 presentation, which focused on an exhibition game intended for a large audience. I considered how to explain the game effectively to people unfamiliar with it. After working on the concept for an extended period, it can be challenging to recognize what information newcomers require. For our presentation, this required careful consideration of how to communicate participant roles and how to join the activity in a crowded setting.
+
+Collaborating with Team BEACH prompted me to reflect on how each member’s contributions integrated into the overall presentation. I appreciated the opportunity to support my teammates and participate in the development process. In the future, I would recommend conducting a practice session in which one individual assumes the perspective of someone unfamiliar with the project. The questions raised during this exercise could help identify areas that need clearer explanation before the final presentation.
