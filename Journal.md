@@ -249,3 +249,27 @@ This work developed the maze from a static image into an interactive collection 
 I contributed to my team's CART 470 presentation, which focused on an exhibition game intended for a large audience. I considered how to explain the game effectively to people unfamiliar with it. After working on the concept for an extended period, it can be challenging to recognize what information newcomers require. For our presentation, this required careful consideration of how to communicate participant roles and how to join the activity in a crowded setting.
 
 Collaborating with Team BEACH prompted me to reflect on how each member’s contributions integrated into the overall presentation. I appreciated the opportunity to support my teammates and participate in the development process. In the future, I would recommend conducting a practice session in which one individual assumes the perspective of someone unfamiliar with the project. The questions raised during this exercise could help identify areas that need clearer explanation before the final presentation.
+
+# Development Journal — Strawberry Mosaic Arena
+
+## From a maze to a game about making paths
+
+Our original concept was a maze where players collected colored blocks to complete a strawberry mosaic. We developed that idea into a game where players push blocks and carve their own routes. I replaced the built-in paths with diggable walls and added coloured pockets where blocks spawn. Now players have to plan where to dig and leave enough room to get behind a block when they want to turn it.
+
+Our mosaic has 62 tiles. A block snaps into place when it reaches an empty tile of the same colour. Players can push a pink block across green tiles to reach a pink spot deeper in the strawberry. I also added a dark steel border with yellow rails to make the walls that cannot be dug easy to recognize.
+
+## Adding hazards players can react to
+
+We wanted players to make decisions under pressure while carving paths and moving blocks. I added hidden mines that start a three-second countdown when uncovered. A red warning marks the blast area, giving players time to escape or push a block to safety. If a player gets caught, they return to the start. Destroyed blocks return to their pockets, and completed mosaic tiles stay filled.
+
+I also added a hidden trap room with a moving buzz saw and a laser that warns players before firing. Players can time their crossing or carve a route around the room.
+
+## Preparing our arena for a shared screen
+
+Our goal is for everyone to play together on one screen. The wider arena made the full map easier to fit, but the game pieces became harder to see. I added adjustable zoom, a full-map view, and a minimap. I also fixed a movement issue where the next tile step could start before the current animation finished, causing the character to jump.
+
+We moved from numbered spawn slots to a communal starting area with reusable entry positions. To help players find each other, I added stable player IDs, colour-coded markers, and a searchable player list. Selecting **Locate** highlights a player without moving the shared camera.
+
+## Reflection
+
+Our single-player prototype now feels good to play. The main design lesson from this stage was that giving players more room to explore also makes them easier to lose on a shared screen. The minimap and player list give us two ways to address that. The tracking logic passed checks with 96 simulated entries. Our next step is to connect multiplayer and see how well those tools work with a real group.
