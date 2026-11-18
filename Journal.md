@@ -273,3 +273,28 @@ We moved from numbered spawn slots to a communal starting area with reusable ent
 ## Reflection
 
 Our single-player prototype now feels good to play. The main design lesson from this stage was that giving players more room to explore also makes them easier to lose on a shared screen. The minimap and player list give us two ways to address that. The tracking logic passed checks with 96 simulated entries. Our next step is to connect multiplayer and see how well those tools work with a real group.
+
+
+# Expanding Our Mosaic Game
+
+During this stage of development, I expanded our mosaic prototype with new gameplay mechanics, local multiplayer support, and interface improvements. Our concept remains focused on players creating their own paths, pushing coloured blocks from supply pockets, and working together to complete a mosaic.
+
+I added a second level based on the orange image. Once players complete the strawberry mosaic, the game progresses to the orange mosaic. This gives our prototype a clearer sense of progression and demonstrates how our concept can support different images and levels.
+
+I also adjusted the bomb behaviour so explosion effects no longer freeze player movement. Players can keep moving while explosions happen. Being caught in a blast still sends a player back to spawn, while a block caught in the blast is destroyed and must be retrieved again.
+
+To make navigation more interactive, I added randomly placed doors that players can open and close. These introduce another decision when moving through the map. In multiplayer, they also create opportunities for players to help each other or playfully interfere with someone else’s route.
+
+Another addition was portable bombs. Players can discover these while clearing paths, collect them into an inventory, and place them during gameplay. The pickups remain hidden until the surrounding path is cleared. I added a two-second delay before collection so players have time to recognize what they found, without displaying a countdown.
+
+I added teleporters that can transport players and blocks across the map. Some teleporters lead into enclosed trap rooms where players cannot dig their way out. They must use a teleporter to escape. This adds uncertainty to exploration and gives our existing traps another way to affect navigation.
+
+For local multiplayer, I added the ability to press **P** to spawn a second player controlled with an Xbox controller. The second player uses the stick or D-pad to move, **A** to interact with doors, **B** to place bombs, and **X** to switch the map view. Both players share the same screen, giving us a working two-player setup as we continue developing our larger multiplayer concept.
+
+I improved the tracking interface so the minimap and player list occupy a separate sidebar instead of covering players on the map. I cleaned up the text, removed duplicate minimap letters, and adjusted player tags so they don't cover avatars or extend outside the gameplay area. These changes make it easier to identify players and follow their positions.
+
+I also added the supplied QR code beneath the player list so people can access the phone-controller link. After reviewing its size, I reduced the QR code and removed the “Phone controller” label. The sidebar now prioritizes the minimap first, the player list second, and the QR code third. The minimap stays fixed while the lower section can scroll, and clicking the smaller QR opens a larger version for scanning. I also corrected a layout issue that had caused the collapsed player-list button to disappear.
+
+These additions helped me recognize how closely gameplay and interface design affect each other. Our prototype now offers more ways to explore, cooperate, and interfere with other players, but those interactions depend on clear information. Prioritizing the minimap and player list helps keep our shared-screen game readable as we add more features.
+
+The latest interface changes passed compilation checks. Further playtesting is still needed to evaluate QR scanning, the new mechanics together, and how our layout performs with larger groups. The current multiplayer implementation supports two local players; larger online sessions and connecting phone-controller input remain future development work.
