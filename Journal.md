@@ -298,3 +298,59 @@ I also added the supplied QR code beneath the player list so people can access t
 These additions helped me recognize how closely gameplay and interface design affect each other. Our prototype now offers more ways to explore, cooperate, and interfere with other players, but those interactions depend on clear information. Prioritizing the minimap and player list helps keep our shared-screen game readable as we add more features.
 
 The latest interface changes passed compilation checks. Further playtesting is still needed to evaluate QR scanning, the new mechanics together, and how our layout performs with larger groups. The current multiplayer implementation supports two local players; larger online sessions and connecting phone-controller input remain future development work.
+
+# Development Journal — Phone Controls and Arena Updates
+
+**Date: November 24, 2026**
+
+## Connecting Our Phone Controller
+
+I connected the phone controller to our Unity prototype so players can join and control their own character from a phone while sharing the same game screen.
+
+The phone controls now support:
+
+- **Directional buttons:** move, clear paths, and push blocks.
+- **A button:** open or close nearby doors.
+- **B button:** place a portable bomb from the player’s inventory.
+
+Each phone player receives a player ID that connects their character to the minimap and player list. The game generates a QR code for the current controller connection.
+
+## Preparing Our Game for an Exhibition
+
+The first connection relied on phones reaching the computer through the local network. Testing exposed connection problems, and requiring guests to change their phone settings would make joining our game inconvenient.
+
+I changed the connection to use a public HTTPS link. This allows guests to join through venue Wi-Fi or mobile data. I successfully tested the controller on a phone and confirmed that it could control a player in our game.
+
+I also added connection checks so the QR code appears only when the public link is ready, along with a retry option for connection problems.
+
+The exhibition computer is now configured to keep running the game when its window loses focus and to keep the computer and display awake while the game is active. The standalone game also prevents accidental duplicate copies from opening.
+
+The current public address is temporary, so we still need to arrange a permanent exhibition address.
+
+## Adding Our Arena Background
+
+I added the supplied background artwork beneath the playable arena. As players clear the diggable walls, they reveal the artwork underneath.
+
+The image matches our arena’s proportions, so it fits without cropping or stretching. Our mosaic, colored pushable blocks, spawn room, trap rooms, and other gameplay objects remain visible above it.
+
+## Adding Leaf Artwork to the Diggable Walls
+
+I replaced the plain appearance of the diggable walls with the supplied leaf artwork. The larger image contains six tile variations, which repeat across the arena at the size of individual grid cells.
+
+Players touch these leaf tiles to reveal a path. The colored blocks used to complete our mosaics keep their existing appearance.
+
+I used sharp texture filtering to preserve the pixel artwork and kept the wall visibility updates small so clearing paths does not require replacing the entire arena image.
+
+## Giving Our Map More Screen Space
+
+I removed the upper and lower information banners and expanded the gameplay view to use the full screen height.
+
+The right sidebar still contains our minimap, player list, and controller QR code. Player labels, bomb countdowns, and pickup notices continue to use the camera’s visible area to position themselves.
+
+This gives our arena more room on screen and puts more attention on the players, paths, artwork, and mosaic.
+
+## Testing and Next Steps
+
+We successfully tested phone control on a real phone. The latest artwork and layout changes also passed code compilation checks for both supported input configurations.
+
+Next, we'll review the updated visuals in Unity, test readability on the exhibition display, and rehearse with a larger group of phone players.
